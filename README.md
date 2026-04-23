@@ -101,5 +101,5 @@ weather-app/
 
 ## Autor
 
-**[Seu Nome]** — Estudante de Engenharia de Computação, IFSP Piracicaba  
+**[Gabriel R. Pires]** — Estudante de Engenharia de Computação, IFSP Piracicaba  
 GitHub: [@Rezecon](https://github.com/Rezecon)
