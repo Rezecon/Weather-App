@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <h1 class="app-title">Weather App</h1>
+
+    <div class="search-box">
+      <input
+        type="text"
+        id="city-input"
+        placeholder="Digite o nome da cidade..."
+        autocomplete="off"
+      />
+      <button id="search-btn">Buscar</button>
+    </div>
+
+    <div id="error-msg" class="error hidden">
+      Cidade não encontrada. Tente novamente.
+    </div>
+
+    <div id="weather-card" class="weather-card hidden">
+      <div class="city-name" id="city-name"></div>
+      <div class="country"   id="country"></div>
+
+      <div class="temp-box">
+        <span class="temp"      id="temp"></span>
+        <span class="temp-unit">°C</span>
+      </div>
+
+      <div class="description" id="description"></div>
+
+      <div class="details">
+        <div class="detail-item">
+          <span class="detail-label">Sensação</span>
+          <span class="detail-value" id="feels-like"></span>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Umidade</span>
+          <span class="detail-value" id="humidity"></span>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Vento</span>
+          <span class="detail-value" id="wind"></span>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Mín / Máx</span>
+          <span class="detail-value" id="minmax"></span>
+        </div>
+      </div>
+    </div>
+
+    <div id="loading" class="loading hidden">Buscando...</div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a3a5c, #2e6da4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 1rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 420px;
+}
+
+.app-title {
+  text-align: center;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-bottom: 1.5rem;
+}
+
+/* Search */
+.search-box {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 1rem;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  outline: none;
+  backdrop-filter: blur(4px);
+  transition: background 0.2s;
+}
+
+.search-box input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.search-box input:focus {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.search-box button {
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: 12px;
+  background: #fff;
+  color: #1a3a5c;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.1s;
+}
+
+.search-box button:hover  { opacity: 0.9; }
+.search-box button:active { transform: scale(0.97); }
+
+/* Error */
+.error {
+  text-align: center;
+  color: #ffcccc;
+  background: rgba(255, 80, 80, 0.2);
+  border-radius: 10px;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Loading */
+.loading {
+  text-align: center;
+  color: rgba(255,255,255,0.7);
+  font-size: 0.95rem;
+  margin-top: 1rem;
+}
+
+/* Weather card */
+.weather-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  padding: 2rem 1.5rem;
+  color: #fff;
+  text-align: center;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.city-name {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.country {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.7);
+  margin-top: 2px;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.temp-box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.temp {
+  font-size: 5rem;
+  font-weight: 200;
+}
+
+.temp-unit {
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-top: 0.8rem;
+}
+
+.description {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.8);
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+}
+
+/* Details grid */
+.details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.detail-item {
+  background: rgba(255,255,255,0.1);
+  border-radius: 12px;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.detail-label {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.detail-value {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Utility */
+.hidden {
+  display: none;
+}
